@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary: #536942;
+  --secondary: #ffd936;
+  --white: #efefef;
+}
+
+body {
+  font-family: "Space Mono", serif;
+ color: var(--primary);
+}
+
+a{
+  text-decoration: none;
+}
+
+#main {
+  background-image: url("./img/main.png");
+  min-height: 70vh;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 16px;
+  margin: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list a {
+  color: var(--white);
+}
+
+.btn {
+  padding: 12px 20px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.btn-primary {
+  border: 2px solid var(--white);
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: var(--white);
+}
+
+.main-content .intro-heading {
+  font-size: 50px;
+}
+
+.main-content .main-heading {
+  font-size: 110px;
+  margin-top: -20px;
+}
+
+.main-content p{
+  max-width: 250px;
+  margin-bottom: 10px;
+}
